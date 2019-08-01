@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="calculator">
+      <div class="calculator__display">
+        <p id="result">0</p>
+      </div>
+      <div class="calculator__keys">
+        <button class="calculator__keys--operator" data-attr="÷" onclick="selectOperator(this)"> ÷ </button>
+        <button class="calculator__keys--operator" data-attr="*" onclick="selectOperator(this)"> × </button>
+        <button class="calculator__keys--operator" data-attr="-" onclick="selectOperator(this)"> - </button>
+        <button class="calculator__keys--operator" data-attr="+" onclick="selectOperator(this)"> + </button>
+        <button data-attr="7" onclick="selectNumber(this)"> 7 </button>
+        <button data-attr="8" onclick="selectNumber(this)"> 8 </button>
+        <button data-attr="9" onclick="selectNumber(this)"> 9 </button>
+        <button data-attr="4" onclick="selectNumber(this)"> 4 </button> 
+        <button data-attr="5" onclick="selectNumber(this)"> 5 </button>
+        <button data-attr="6" onclick="selectNumber(this)"> 6 </button>
+        <button data-attr="1" onclick="selectNumber(this)"> 1 </button>
+        <button data-attr="2" onclick="selectNumber(this)"> 2 </button>
+        <button data-attr="3" onclick="selectNumber(this)"> 3 </button>
+        <button data-attr="0" onclick="selectNumber(this)"> 0 </button>
+        <button data-attr="AC" onclick="reset()"> AC </button>
+        <button data-attr="="> = </button>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
